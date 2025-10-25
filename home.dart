@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-// To run this code, you'd typically run it inside a StatelessWidget or
-// StatefulWidget's build method, wrapped by a MaterialApp.
+p.
 void main() {
   runApp(const MyApp());
 }
@@ -26,14 +25,14 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Contact List'),
-        backgroundColor: const Color(0xFF607D8B), // Slate/blue-gray color
+        backgroundColor: const Color(0xFF607D8B), 
         foregroundColor: Colors.white,
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
           children: <Widget>[
-            // --- Input Fields (TextFormField) ---
+            
              TextFormField(
               initialValue: 'Hasan',
               decoration: InputDecoration(
@@ -51,12 +50,12 @@ class Home extends StatelessWidget {
             ),
             const SizedBox(height: 15.0),
 
-            // --- Add Button (ElevatedButton) ---
+          
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  // Functionality not required
+                 
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF607D8B),
@@ -74,7 +73,7 @@ class Home extends StatelessWidget {
             ),
             const SizedBox(height: 20.0),
 
-            // --- Contact List (ListView.builder with ListTile) ---
+            
             Expanded(
               child: ListView.separated(
                 itemCount: 5,
@@ -114,4 +113,5 @@ class Home extends StatelessWidget {
       ),
     );
   }
+
 }
